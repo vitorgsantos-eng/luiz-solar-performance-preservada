@@ -23,6 +23,12 @@ import {
   Utensils,
   Palmtree,
 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Navbar } from "@/components/luiz/Navbar";
 import { FloatingWhatsApp } from "@/components/luiz/FloatingWhatsApp";
 import { Reveal } from "@/components/luiz/Reveal";
@@ -83,6 +89,52 @@ const painCards = [
   "A fatura da Coelba está difícil de entender?",
   "O inversor apresenta alertas ou falhas?",
   "Os módulos estão sujos ou sem inspeção há muito tempo?",
+];
+
+const clarityItems = [
+  {
+    title: "Relatório técnico claro",
+    text: "Você recebe um diagnóstico estruturado, com leitura simples do que foi avaliado e do estado atual do sistema.",
+  },
+  {
+    title: "Recomendações priorizadas",
+    text: "O que precisa de atenção agora, o que pode aguardar e o que é apenas acompanhamento preventivo.",
+  },
+  {
+    title: "Linguagem honesta",
+    text: "Sem termos confusos, sem venda forçada de equipamento. Apenas o que faz sentido para o seu sistema.",
+  },
+  {
+    title: "Decisão com segurança",
+    text: "Você entende o porquê de cada recomendação antes de aprovar qualquer serviço.",
+  },
+];
+
+const faqItems = [
+  {
+    q: "Quanto tempo dura o Diagnóstico Solar?",
+    a: "Em geral, entre 1h e 2h em campo, dependendo do porte do sistema. Você recebe o relatório técnico em seguida, com as recomendações organizadas.",
+  },
+  {
+    q: "Vocês atendem qualquer marca de inversor e módulo?",
+    a: "Sim. Trabalhamos com as principais marcas do mercado fotovoltaico (Growatt, Fronius, Sungrow, Deye, Canadian, Trina, JA Solar e outras).",
+  },
+  {
+    q: "Preciso ter sido cliente de vocês na instalação?",
+    a: "Não. A Luiz Solar atende sistemas instalados por qualquer empresa. Nosso foco é cuidar da performance e da segurança do que já está em operação.",
+  },
+  {
+    q: "Vocês atendem fora de Salvador?",
+    a: "Atendemos toda a Região Metropolitana de Salvador. Para cidades fora dessa área, consulte disponibilidade pelo WhatsApp.",
+  },
+  {
+    q: "Como funciona a cobrança do diagnóstico?",
+    a: "O diagnóstico tem valor fixo informado antes do agendamento, sem surpresas. Caso opte por contratar manutenção ou reparo conosco, o valor é considerado no orçamento.",
+  },
+  {
+    q: "E se meu sistema não tiver nada de errado?",
+    a: "Ótima notícia. Você sai com a tranquilidade de saber que está tudo dentro do esperado e com um plano simples de manutenção preventiva.",
+  },
 ];
 
 const Index = () => {
