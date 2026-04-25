@@ -38,6 +38,7 @@ import {
   WHATSAPP_DISPLAY,
   EMAIL,
   INSTAGRAM,
+  INSTAGRAM_URL,
 } from "@/components/luiz/constants";
 import heroImg from "@/assets/hero-technician.jpg";
 import reportImg from "@/assets/report-checklist.jpg";
