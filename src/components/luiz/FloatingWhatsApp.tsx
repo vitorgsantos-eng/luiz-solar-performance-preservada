@@ -7,10 +7,17 @@ export const FloatingWhatsApp = () => {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noreferrer"
-      aria-label="Falar pelo WhatsApp"
-      className="fixed bottom-6 right-6 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30 hover:scale-105 transition-transform"
+      aria-label="Agendar Diagnóstico pelo WhatsApp"
+      className="group fixed bottom-5 right-5 md:bottom-7 md:right-7 z-50 inline-flex items-center gap-3 rounded-full bg-[#25D366] pl-4 pr-5 py-3.5 text-white shadow-[0_10px_30px_-8px_rgba(37,211,102,0.55)] hover:shadow-[0_14px_38px_-8px_rgba(37,211,102,0.7)] transition-all hover:-translate-y-0.5"
     >
-      <MessageCircle size={26} />
+      <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25">
+        <span className="absolute inset-0 rounded-full bg-white/20 animate-ping opacity-40" />
+        <MessageCircle size={20} strokeWidth={1.8} className="relative" />
+      </span>
+      <span className="hidden sm:flex flex-col leading-tight">
+        <span className="text-[10px] uppercase tracking-[0.18em] text-white/75">WhatsApp</span>
+        <span className="text-sm font-medium">Agendar Diagnóstico</span>
+      </span>
     </a>
   );
 };
