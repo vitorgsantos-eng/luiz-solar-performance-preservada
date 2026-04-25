@@ -742,7 +742,7 @@ const Index = () => {
           </a>
 
           <a
-            href="#"
+            href="https://www.instagram.com/luiz.solar/"
             className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
           >
             <Instagram size={16} strokeWidth={1.6} />
