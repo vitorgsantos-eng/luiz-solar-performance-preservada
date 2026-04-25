@@ -167,14 +167,14 @@ const Index = () => {
               Seu sistema solar <br className="hidden md:block" />
               está gerando o que <span className="text-[hsl(var(--orange))] italic">deveria?</span>
             </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="lead max-w-xl"
-            >
-              Manutenção especializada para preservar a performance, a segurança e a vida útil do seu investimento.
-            </motion.p>
+           <motion.p
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="lead max-w-xl"
+>
+  Manutenção, diagnóstico e reparos para preservar a performance, a segurança e a vida útil do seu sistema solar.
+</motion.p>
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -232,11 +232,17 @@ const Index = () => {
               />
               <div className="absolute inset-0 ring-1 ring-graphite/10" />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-background border border-border p-5 max-w-[220px] hidden md:block">
-              <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-2">Eficiência média</div>
-              <div className="font-display text-3xl font-semibold text-graphite">+18%</div>
-              <div className="text-xs text-graphite/70 mt-1">após manutenção técnica</div>
-            </div>
+           <div className="absolute -bottom-6 -left-6 bg-background border border-border p-5 max-w-[240px] hidden md:block">
+  <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-2">
+    Diagnóstico técnico
+  </div>
+  <div className="font-display text-2xl font-semibold text-graphite leading-tight">
+    Performance preservada
+  </div>
+  <div className="text-xs text-graphite/70 mt-2">
+    com relatório claro e orientações objetivas
+  </div>
+</div>
             <div className="absolute -top-4 -right-4 border border-[hsl(var(--orange))] w-24 h-24 hidden md:block" />
           </motion.div>
         </div>
