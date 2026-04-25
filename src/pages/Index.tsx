@@ -544,7 +544,62 @@ const Index = () => {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-20 md:py-32">
+      {/* FAQ */}
+      <section id="faq" className="py-20 md:py-32">
+        <div className="container-luiz grid lg:grid-cols-12 gap-12">
+          <div className="lg:col-span-4">
+            <Reveal>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="hairline" />
+                <span className="eyebrow">Perguntas Frequentes</span>
+              </div>
+              <h2 className="section-title">
+                Dúvidas <span className="italic">comuns</span>
+              </h2>
+              <p className="lead mt-6">
+                Reunimos as perguntas que mais ouvimos de quem quer cuidar bem do próprio sistema solar.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[hsl(var(--orange))] hover:gap-3 transition-all"
+              >
+                Não encontrou sua dúvida? Fale com a gente
+                <ArrowRight size={15} />
+              </a>
+            </Reveal>
+          </div>
+          <div className="lg:col-span-8">
+            <Reveal delay={0.1}>
+              <Accordion type="single" collapsible className="border-t border-border">
+                {faqItems.map((item, i) => (
+                  <AccordionItem
+                    key={item.q}
+                    value={`item-${i}`}
+                    className="border-b border-border"
+                  >
+                    <AccordionTrigger className="py-6 hover:no-underline group text-left">
+                      <div className="flex items-start gap-5 pr-4">
+                        <span className="font-mono text-[11px] text-graphite/40 mt-1 shrink-0">0{i + 1}</span>
+                        <span className="font-display text-base md:text-lg font-medium text-graphite group-hover:text-[hsl(var(--orange))] transition-colors">
+                          {item.q}
+                        </span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-6 pl-12 pr-4 text-sm text-graphite/75 leading-relaxed">
+                      {item.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
         <div className="container-luiz">
           <Reveal>
             <div className="relative bg-graphite text-offwhite p-12 md:p-20 overflow-hidden">
