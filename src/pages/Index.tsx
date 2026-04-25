@@ -359,7 +359,69 @@ const Index = () => {
       </section>
 
       {/* BENEFÍCIOS */}
-      <section id="beneficios" className="py-20 md:py-32">
+      {/* CLAREZA */}
+      <section id="clareza" className="py-20 md:py-32 relative overflow-hidden">
+        <div className="absolute -left-32 top-1/4 w-[420px] h-[420px] rounded-full bg-[hsl(var(--sage-soft))] blur-3xl opacity-60 pointer-events-none" />
+        <div className="container-luiz relative grid lg:grid-cols-12 gap-12 items-start">
+          <div className="lg:col-span-5">
+            <Reveal>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="hairline" />
+                <span className="eyebrow">Nossa Promessa</span>
+              </div>
+              <h2 className="section-title">
+                Você recebe clareza, <br />
+                <span className="italic text-[hsl(var(--orange))]">não apenas um orçamento.</span>
+              </h2>
+              <p className="lead mt-6">
+                Nosso compromisso é entregar um diagnóstico que faça sentido para você — em linguagem direta, com critério técnico e sem qualquer pressão comercial.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center gap-3 border border-graphite/30 px-7 py-4 text-sm font-medium text-graphite hover:bg-graphite hover:text-offwhite hover:border-graphite transition-colors group"
+              >
+                <MessageCircle size={16} strokeWidth={1.6} />
+                Quero meu Diagnóstico
+                <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Reveal>
+          </div>
+          <div className="lg:col-span-7">
+            <Reveal delay={0.15}>
+              <div className="relative bg-background border border-border">
+                <div className="flex items-center justify-between px-7 py-5 border-b border-border bg-[hsl(var(--light-grey))]/40">
+                  <div className="flex items-center gap-3">
+                    <span className="h-2 w-2 rounded-full bg-[hsl(var(--orange))]" />
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-graphite/60">Relatório Luiz Solar</span>
+                  </div>
+                  <span className="font-mono text-[10px] text-graphite/40">REL · 0042</span>
+                </div>
+                <div className="divide-y divide-border">
+                  {clarityItems.map((item, i) => (
+                    <div key={item.title} className="flex items-start gap-5 px-7 py-6 group hover:bg-[hsl(var(--orange-soft))]/30 transition-colors">
+                      <span className="font-mono text-[10px] text-graphite/40 mt-1.5 w-6 shrink-0">0{i + 1}</span>
+                      <CheckCircle2 size={18} strokeWidth={1.4} className="text-[hsl(var(--sage))] mt-0.5 shrink-0" />
+                      <div className="flex-1">
+                        <h3 className="font-display text-base font-semibold text-graphite mb-1.5">{item.title}</h3>
+                        <p className="text-sm text-graphite/70 leading-relaxed">{item.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center justify-between px-7 py-4 border-t border-border bg-[hsl(var(--light-grey))]/40 text-[11px] text-graphite/50">
+                  <span>Assinado · Equipe Técnica Luiz Solar</span>
+                  <span className="font-mono">v.2025</span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* BENEFÍCIOS */}
+      <section id="beneficios" className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
         <div className="container-luiz">
           <Reveal className="max-w-2xl mb-16">
             <div className="flex items-center gap-3 mb-6">
