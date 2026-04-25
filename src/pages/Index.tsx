@@ -421,7 +421,7 @@ const Index = () => {
       </section>
 
       {/* BENEFÍCIOS */}
-      <section id="beneficios" className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
+      <section id="beneficios" className="py-20 md:py-32">
         <div className="container-luiz">
           <Reveal className="max-w-2xl mb-16">
             <div className="flex items-center gap-3 mb-6">
