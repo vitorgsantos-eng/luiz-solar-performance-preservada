@@ -807,7 +807,9 @@ const Index = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/luiz.solar/"
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
                 >
                   <Instagram size={16} strokeWidth={1.6} />
