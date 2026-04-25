@@ -12,8 +12,8 @@ export const FloatingWhatsApp = () => {
     >
       <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25">
         <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25">
-  <MessageCircle size={20} strokeWidth={1.8} className="relative" />
-</span>
+          <MessageCircle size={20} strokeWidth={1.8} className="relative" />
+        </span>
         <MessageCircle size={20} strokeWidth={1.8} className="relative" />
       </span>
       <span className="hidden sm:flex flex-col leading-tight">

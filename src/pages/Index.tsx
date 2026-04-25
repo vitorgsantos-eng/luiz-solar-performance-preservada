@@ -223,14 +223,15 @@ const Index = () => {
               Seu sistema solar <br className="hidden md:block" />
               está gerando o que <span className="text-[hsl(var(--orange))] italic">deveria?</span>
             </motion.h1>
-           <motion.p
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
-  className="lead max-w-xl"
->
-  Manutenção, diagnóstico e reparos para preservar a performance, a segurança e a vida útil do seu sistema solar.
-</motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lead max-w-xl"
+            >
+              Manutenção, diagnóstico e reparos para preservar a performance, a segurança e a vida
+              útil do seu sistema solar.
+            </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -266,7 +267,11 @@ const Index = () => {
                 "Manutenção preventiva e corretiva",
               ].map((s) => (
                 <div key={s} className="flex items-start gap-2.5">
-                  <Sun size={16} className="text-[hsl(var(--orange))] mt-0.5 shrink-0" strokeWidth={1.6} />
+                  <Sun
+                    size={16}
+                    className="text-[hsl(var(--orange))] mt-0.5 shrink-0"
+                    strokeWidth={1.6}
+                  />
                   <span className="text-xs text-graphite/75 leading-relaxed">{s}</span>
                 </div>
               ))}
@@ -288,17 +293,17 @@ const Index = () => {
               />
               <div className="absolute inset-0 ring-1 ring-graphite/10" />
             </div>
-           <div className="absolute -bottom-6 -left-6 bg-background border border-border p-5 max-w-[240px] hidden md:block">
-  <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-2">
-    Diagnóstico técnico
-  </div>
-  <div className="font-display text-2xl font-semibold text-graphite leading-tight">
-    Performance preservada
-  </div>
-  <div className="text-xs text-graphite/70 mt-2">
-    com relatório claro e orientações objetivas
-  </div>
-</div>
+            <div className="absolute -bottom-6 -left-6 bg-background border border-border p-5 max-w-[240px] hidden md:block">
+              <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-2">
+                Diagnóstico técnico
+              </div>
+              <div className="font-display text-2xl font-semibold text-graphite leading-tight">
+                Performance preservada
+              </div>
+              <div className="text-xs text-graphite/70 mt-2">
+                com relatório claro e orientações objetivas
+              </div>
+            </div>
             <div className="absolute -top-4 -right-4 border border-[hsl(var(--orange))] w-24 h-24 hidden md:block" />
           </motion.div>
         </div>
@@ -308,23 +313,29 @@ const Index = () => {
       <section className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
         <div className="container-luiz">
           <Reveal className="max-w-3xl">
-  <div className="flex items-center gap-3 mb-6">
-    <span className="hairline" />
-    <span className="eyebrow">O Problema</span>
-  </div>
-  <h2 className="section-title">
-    Você instalou energia solar para economizar. Mas ela continua <span className="italic text-[hsl(var(--orange))]">performando bem?</span>
-  </h2>
-  <p className="lead mt-6">
-    Com o tempo, sujeira nos módulos, falhas de conexão, alertas no inversor, sombreamento, desgaste de componentes ou falta de acompanhamento da fatura podem reduzir silenciosamente o resultado do sistema. A Luiz Solar identifica esses sinais e orienta a melhor solução com clareza, responsabilidade e critério técnico.
-  </p>
-</Reveal>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="hairline" />
+              <span className="eyebrow">O Problema</span>
+            </div>
+            <h2 className="section-title">
+              Você instalou energia solar para economizar. Mas ela continua{" "}
+              <span className="italic text-[hsl(var(--orange))]">performando bem?</span>
+            </h2>
+            <p className="lead mt-6">
+              Com o tempo, sujeira nos módulos, falhas de conexão, alertas no inversor,
+              sombreamento, desgaste de componentes ou falta de acompanhamento da fatura podem
+              reduzir silenciosamente o resultado do sistema. A Luiz Solar identifica esses sinais e
+              orienta a melhor solução com clareza, responsabilidade e critério técnico.
+            </p>
+          </Reveal>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
             {painCards.map((q, i) => (
               <Reveal key={q} delay={i * 0.08}>
                 <div className="group h-full bg-background border border-border p-7 hover:border-[hsl(var(--orange))] transition-colors">
-                  <div className="text-[hsl(var(--orange))] font-display text-2xl mb-4">0{i + 1}</div>
+                  <div className="text-[hsl(var(--orange))] font-display text-2xl mb-4">
+                    0{i + 1}
+                  </div>
                   <p className="text-sm text-graphite leading-relaxed">{q}</p>
                 </div>
               </Reveal>
@@ -336,16 +347,19 @@ const Index = () => {
       {/* SERVIÇOS */}
       <section id="servicos" className="py-20 md:py-32">
         <div className="container-luiz">
-         <Reveal className="max-w-2xl">
-  <div className="flex items-center gap-3 mb-6">
-    <span className="hairline" />
-    <span className="eyebrow">Nossos Serviços</span>
-  </div>
-  <h2 className="section-title">Cuidado técnico para seu sistema continuar produzindo com segurança</h2>
-  <p className="lead mt-6">
-    Soluções de manutenção, diagnóstico e reparo para preservar a performance do seu sistema fotovoltaico com clareza e responsabilidade.
-  </p>
-</Reveal>
+          <Reveal className="max-w-2xl">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="hairline" />
+              <span className="eyebrow">Nossos Serviços</span>
+            </div>
+            <h2 className="section-title">
+              Cuidado técnico para seu sistema continuar produzindo com segurança
+            </h2>
+            <p className="lead mt-6">
+              Soluções de manutenção, diagnóstico e reparo para preservar a performance do seu
+              sistema fotovoltaico com clareza e responsabilidade.
+            </p>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border mt-16 border border-border">
             {services.map((s, i) => (
@@ -353,11 +367,17 @@ const Index = () => {
                 <div className="group h-full bg-background p-8 lg:p-10 hover:bg-[hsl(var(--orange-soft))]/40 transition-colors">
                   <div className="flex items-center justify-between mb-8">
                     <span className="flex h-12 w-12 items-center justify-center border border-graphite/15 group-hover:border-[hsl(var(--orange))] transition-colors">
-                      <s.icon size={20} strokeWidth={1.4} className="text-[hsl(var(--sage))] group-hover:text-[hsl(var(--orange))] transition-colors" />
+                      <s.icon
+                        size={20}
+                        strokeWidth={1.4}
+                        className="text-[hsl(var(--sage))] group-hover:text-[hsl(var(--orange))] transition-colors"
+                      />
                     </span>
                     <span className="text-xs text-graphite/40 font-mono">0{i + 1}</span>
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-graphite mb-3">{s.title}</h3>
+                  <h3 className="font-display text-xl font-semibold text-graphite mb-3">
+                    {s.title}
+                  </h3>
                   <p className="text-sm text-graphite/70 leading-relaxed">{s.text}</p>
                 </div>
               </Reveal>
@@ -367,49 +387,64 @@ const Index = () => {
       </section>
 
       {/* DIAGNÓSTICO */}
-      <section id="diagnostico" className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/50 relative overflow-hidden">
+      <section
+        id="diagnostico"
+        className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/50 relative overflow-hidden"
+      >
         <div className="absolute top-0 left-0 right-0 h-px bg-[hsl(var(--orange))]" />
         <div className="absolute bottom-0 left-0 right-0 h-px bg-[hsl(var(--orange))]" />
         <div className="container-luiz grid lg:grid-cols-12 gap-12 items-start">
-         <div className="lg:col-span-5 lg:sticky lg:top-32">
-  <Reveal>
-    <div className="flex items-center gap-3 mb-6">
-      <span className="hairline" />
-      <span className="eyebrow">Serviço Principal</span>
-    </div>
-    <h2 className="section-title">
-      Diagnóstico Solar <br />
-      <span className="italic">Luiz Solar</span>
-    </h2>
-    <p className="lead mt-6">
-      Uma avaliação técnica para quem já possui energia solar e quer entender, com clareza, se o sistema está gerando corretamente, se a fatura está coerente e se há sinais de perda de desempenho.
-    </p>
-    <a
-      href={WHATSAPP_URL}
-      target="_blank"
-      rel="noreferrer"
-      className="mt-8 inline-flex items-center gap-3 bg-graphite px-7 py-4 text-sm font-medium text-offwhite hover:bg-[hsl(var(--orange))] transition-colors group"
-    >
-      Quero avaliar meu sistema
-      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-    </a>
-  </Reveal>
-</div>
+          <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <Reveal>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="hairline" />
+                <span className="eyebrow">Serviço Principal</span>
+              </div>
+              <h2 className="section-title">
+                Diagnóstico Solar <br />
+                <span className="italic">Luiz Solar</span>
+              </h2>
+              <p className="lead mt-6">
+                Uma avaliação técnica para quem já possui energia solar e quer entender, com
+                clareza, se o sistema está gerando corretamente, se a fatura está coerente e se há
+                sinais de perda de desempenho.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center gap-3 bg-graphite px-7 py-4 text-sm font-medium text-offwhite hover:bg-[hsl(var(--orange))] transition-colors group"
+              >
+                Quero avaliar meu sistema
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Reveal>
+          </div>
           <div className="lg:col-span-7">
             <Reveal delay={0.15}>
               <div className="bg-background border border-border p-8 md:p-12">
                 <div className="flex items-center justify-between mb-8 pb-6 border-b border-border">
                   <div>
-                    <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(var(--sage))]">Checklist técnico</div>
-                    <div className="font-display text-lg text-graphite mt-1">O que pode ser avaliado</div>
+                    <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(var(--sage))]">
+                      Checklist técnico
+                    </div>
+                    <div className="font-display text-lg text-graphite mt-1">
+                      O que pode ser avaliado
+                    </div>
                   </div>
                   <FileText size={22} className="text-[hsl(var(--orange))]" strokeWidth={1.4} />
                 </div>
                 <ul className="space-y-5">
                   {diagnosticItems.map((item, i) => (
                     <li key={item} className="flex items-start gap-4 group">
-                      <span className="font-mono text-[10px] text-graphite/40 mt-1 w-6">0{i + 1}</span>
-                      <CheckCircle2 size={18} strokeWidth={1.4} className="text-[hsl(var(--sage))] mt-0.5 shrink-0" />
+                      <span className="font-mono text-[10px] text-graphite/40 mt-1 w-6">
+                        0{i + 1}
+                      </span>
+                      <CheckCircle2
+                        size={18}
+                        strokeWidth={1.4}
+                        className="text-[hsl(var(--sage))] mt-0.5 shrink-0"
+                      />
                       <span className="text-sm text-graphite/85 leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -423,50 +458,65 @@ const Index = () => {
       {/* BENEFÍCIOS */}
       {/* CLAREZA */}
       <section id="clareza" className="py-20 md:py-32 relative overflow-hidden">
-  <div className="absolute -left-32 top-1/4 w-[420px] h-[420px] rounded-full bg-[hsl(var(--sage-soft))] blur-3xl opacity-60 pointer-events-none" />
-  <div className="container-luiz relative grid lg:grid-cols-12 gap-12 items-start">
-    <div className="lg:col-span-5">
-      <Reveal>
-        <div className="flex items-center gap-3 mb-6">
-          <span className="hairline" />
-          <span className="eyebrow">Nossa Promessa</span>
-        </div>
-        <h2 className="section-title">
-          Você recebe clareza, <br />
-          <span className="italic text-[hsl(var(--orange))]">não apenas um orçamento.</span>
-        </h2>
-        <p className="lead mt-6">
-          Antes de recomendar qualquer manutenção ou reparo, buscamos explicar o que foi observado, o que merece atenção e quais próximos passos fazem sentido para o seu sistema solar.
-        </p>
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-8 inline-flex items-center gap-3 border border-graphite/30 px-7 py-4 text-sm font-medium text-graphite hover:bg-graphite hover:text-offwhite hover:border-graphite transition-colors group"
-        >
-          <MessageCircle size={16} strokeWidth={1.6} />
-          Quero meu Diagnóstico
-          <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
-        </a>
-      </Reveal>
-    </div>
+        <div className="absolute -left-32 top-1/4 w-[420px] h-[420px] rounded-full bg-[hsl(var(--sage-soft))] blur-3xl opacity-60 pointer-events-none" />
+        <div className="container-luiz relative grid lg:grid-cols-12 gap-12 items-start">
+          <div className="lg:col-span-5">
+            <Reveal>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="hairline" />
+                <span className="eyebrow">Nossa Promessa</span>
+              </div>
+              <h2 className="section-title">
+                Você recebe clareza, <br />
+                <span className="italic text-[hsl(var(--orange))]">não apenas um orçamento.</span>
+              </h2>
+              <p className="lead mt-6">
+                Antes de recomendar qualquer manutenção ou reparo, buscamos explicar o que foi
+                observado, o que merece atenção e quais próximos passos fazem sentido para o seu
+                sistema solar.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center gap-3 border border-graphite/30 px-7 py-4 text-sm font-medium text-graphite hover:bg-graphite hover:text-offwhite hover:border-graphite transition-colors group"
+              >
+                <MessageCircle size={16} strokeWidth={1.6} />
+                Quero meu Diagnóstico
+                <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Reveal>
+          </div>
           <div className="lg:col-span-7">
             <Reveal delay={0.15}>
               <div className="relative bg-background border border-border">
                 <div className="flex items-center justify-between px-7 py-5 border-b border-border bg-[hsl(var(--light-grey))]/40">
                   <div className="flex items-center gap-3">
                     <span className="h-2 w-2 rounded-full bg-[hsl(var(--orange))]" />
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-graphite/60">Relatório Luiz Solar</span>
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-graphite/60">
+                      Relatório Luiz Solar
+                    </span>
                   </div>
                   <span className="font-mono text-[10px] text-graphite/40">REL · 0042</span>
                 </div>
                 <div className="divide-y divide-border">
                   {clarityItems.map((item, i) => (
-                    <div key={item.title} className="flex items-start gap-5 px-7 py-6 group hover:bg-[hsl(var(--orange-soft))]/30 transition-colors">
-                      <span className="font-mono text-[10px] text-graphite/40 mt-1.5 w-6 shrink-0">0{i + 1}</span>
-                      <CheckCircle2 size={18} strokeWidth={1.4} className="text-[hsl(var(--sage))] mt-0.5 shrink-0" />
+                    <div
+                      key={item.title}
+                      className="flex items-start gap-5 px-7 py-6 group hover:bg-[hsl(var(--orange-soft))]/30 transition-colors"
+                    >
+                      <span className="font-mono text-[10px] text-graphite/40 mt-1.5 w-6 shrink-0">
+                        0{i + 1}
+                      </span>
+                      <CheckCircle2
+                        size={18}
+                        strokeWidth={1.4}
+                        className="text-[hsl(var(--sage))] mt-0.5 shrink-0"
+                      />
                       <div className="flex-1">
-                        <h3 className="font-display text-base font-semibold text-graphite mb-1.5">{item.title}</h3>
+                        <h3 className="font-display text-base font-semibold text-graphite mb-1.5">
+                          {item.title}
+                        </h3>
                         <p className="text-sm text-graphite/70 leading-relaxed">{item.text}</p>
                       </div>
                     </div>
@@ -474,7 +524,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center justify-between px-7 py-4 border-t border-border bg-[hsl(var(--light-grey))]/40 text-[11px] text-graphite/50">
                   <span>Registro técnico · Luiz Solar</span>
-<span className="font-mono">v.01</span>
+                  <span className="font-mono">v.01</span>
                 </div>
               </div>
             </Reveal>
@@ -497,7 +547,9 @@ const Index = () => {
               <Reveal key={b.title} delay={i * 0.08}>
                 <div className="border-t border-[hsl(var(--orange))] pt-8">
                   <b.icon size={28} strokeWidth={1.3} className="text-[hsl(var(--sage))] mb-6" />
-                  <h3 className="font-display text-xl font-semibold text-graphite mb-3">{b.title}</h3>
+                  <h3 className="font-display text-xl font-semibold text-graphite mb-3">
+                    {b.title}
+                  </h3>
                   <p className="text-sm text-graphite/70 leading-relaxed">{b.text}</p>
                 </div>
               </Reveal>
@@ -509,16 +561,17 @@ const Index = () => {
       {/* COMO FUNCIONA */}
       <section id="como-funciona" className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
         <div className="container-luiz">
-         <Reveal className="max-w-2xl mb-16">
-  <div className="flex items-center gap-3 mb-6">
-    <span className="hairline" />
-    <span className="eyebrow">O Processo</span>
-  </div>
-  <h2 className="section-title">Como funciona</h2>
-  <p className="lead mt-6">
-    Um atendimento organizado para entender o problema, orientar com clareza e executar apenas o que for necessário.
-  </p>
-</Reveal>
+          <Reveal className="max-w-2xl mb-16">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="hairline" />
+              <span className="eyebrow">O Processo</span>
+            </div>
+            <h2 className="section-title">Como funciona</h2>
+            <p className="lead mt-6">
+              Um atendimento organizado para entender o problema, orientar com clareza e executar
+              apenas o que for necessário.
+            </p>
+          </Reveal>
 
           <div className="relative">
             <div className="hidden lg:block absolute top-12 left-0 right-0 h-px bg-graphite/15" />
@@ -531,7 +584,9 @@ const Index = () => {
                         {step.n}
                       </span>
                     </div>
-                    <h3 className="font-display text-lg font-semibold text-graphite mb-2">{step.title}</h3>
+                    <h3 className="font-display text-lg font-semibold text-graphite mb-2">
+                      {step.title}
+                    </h3>
                     <p className="text-sm text-graphite/70 leading-relaxed">{step.text}</p>
                   </div>
                 </Reveal>
@@ -545,15 +600,16 @@ const Index = () => {
       <section className="py-20 md:py-32">
         <div className="container-luiz">
           <Reveal className="max-w-2xl mb-16">
-  <div className="flex items-center gap-3 mb-6">
-    <span className="hairline" />
-    <span className="eyebrow">Público</span>
-  </div>
-  <h2 className="section-title">Para quem é esse serviço?</h2>
-  <p className="lead mt-6">
-    Atendemos clientes que já possuem sistema solar instalado e querem preservar a geração, a segurança e a economia ao longo do tempo.
-  </p>
-</Reveal>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="hairline" />
+              <span className="eyebrow">Público</span>
+            </div>
+            <h2 className="section-title">Para quem é esse serviço?</h2>
+            <p className="lead mt-6">
+              Atendemos clientes que já possuem sistema solar instalado e querem preservar a
+              geração, a segurança e a economia ao longo do tempo.
+            </p>
+          </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {audiences.map((a, i) => (
               <Reveal key={a.label} delay={i * 0.06}>
@@ -591,21 +647,28 @@ const Index = () => {
               <span className="eyebrow">Autoridade Técnica</span>
             </div>
             <h2 className="section-title">Energia solar precisa de acompanhamento</h2>
-           <p className="lead mt-6">
-  Um sistema fotovoltaico é um investimento de longo prazo. Para preservar sua eficiência, é importante acompanhar a geração, interpretar a fatura, inspecionar equipamentos e realizar manutenção preventiva. A Luiz Solar atua para cuidar do sistema com método, responsabilidade e visão técnica.
-</p>
+            <p className="lead mt-6">
+              Um sistema fotovoltaico é um investimento de longo prazo. Para preservar sua
+              eficiência, é importante acompanhar a geração, interpretar a fatura, inspecionar
+              equipamentos e realizar manutenção preventiva. A Luiz Solar atua para cuidar do
+              sistema com método, responsabilidade e visão técnica.
+            </p>
             <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-border">
-  {[
-    { v: "01", l: "Diagnóstico antes da solução" },
-    { v: "02", l: "Orientação clara ao cliente" },
-    { v: "03", l: "Manutenção com critério técnico" },
-  ].map((s) => (
-    <div key={s.l}>
-      <div className="font-display text-2xl md:text-3xl font-semibold text-graphite">{s.v}</div>
-      <div className="text-[11px] text-graphite/60 mt-1 uppercase tracking-wider">{s.l}</div>
-    </div>
-  ))}
-</div>
+              {[
+                { v: "01", l: "Diagnóstico antes da solução" },
+                { v: "02", l: "Orientação clara ao cliente" },
+                { v: "03", l: "Manutenção com critério técnico" },
+              ].map((s) => (
+                <div key={s.l}>
+                  <div className="font-display text-2xl md:text-3xl font-semibold text-graphite">
+                    {s.v}
+                  </div>
+                  <div className="text-[11px] text-graphite/60 mt-1 uppercase tracking-wider">
+                    {s.l}
+                  </div>
+                </div>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>
@@ -621,11 +684,12 @@ const Index = () => {
                 <span className="eyebrow">Perguntas Frequentes</span>
               </div>
               <h2 className="section-title">
-  Dúvidas <span className="italic">frequentes</span>
-</h2>
-<p className="lead mt-6">
-  Respostas claras para quem quer cuidar melhor do sistema solar antes de aprovar qualquer manutenção ou reparo.
-</p>
+                Dúvidas <span className="italic">frequentes</span>
+              </h2>
+              <p className="lead mt-6">
+                Respostas claras para quem quer cuidar melhor do sistema solar antes de aprovar
+                qualquer manutenção ou reparo.
+              </p>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -648,7 +712,9 @@ const Index = () => {
                   >
                     <AccordionTrigger className="py-6 hover:no-underline group text-left">
                       <div className="flex items-start gap-5 pr-4">
-                        <span className="font-mono text-[11px] text-graphite/40 mt-1 shrink-0">0{i + 1}</span>
+                        <span className="font-mono text-[11px] text-graphite/40 mt-1 shrink-0">
+                          0{i + 1}
+                        </span>
                         <span className="font-display text-base md:text-lg font-medium text-graphite group-hover:text-[hsl(var(--orange))] transition-colors">
                           {item.q}
                         </span>
@@ -667,98 +733,96 @@ const Index = () => {
 
       {/* CTA FINAL */}
       <section className="py-20 md:py-32 bg-graphite text-offwhite relative overflow-hidden">
-  <div className="absolute inset-0 solar-grid-bg opacity-10 pointer-events-none" />
-  <div className="container-luiz relative text-center max-w-4xl">
-    <div className="flex items-center justify-center gap-3 mb-6">
-      <span className="hairline" />
-      <span className="eyebrow text-[hsl(var(--orange))]">Agende seu diagnóstico</span>
-      <span className="hairline" />
-    </div>
+        <div className="absolute inset-0 solar-grid-bg opacity-10 pointer-events-none" />
+        <div className="container-luiz relative text-center max-w-4xl">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="hairline" />
+            <span className="eyebrow text-[hsl(var(--orange))]">Agende seu diagnóstico</span>
+            <span className="hairline" />
+          </div>
 
-    <h2 className="font-display text-3xl md:text-5xl font-semibold leading-tight">
-      Manutenção que gera resultados. <br />
-      <span className="italic text-[hsl(var(--orange))]">Energia que gera valor.</span>
-    </h2>
+          <h2 className="font-display text-3xl md:text-5xl font-semibold leading-tight">
+            Manutenção que gera resultados. <br />
+            <span className="italic text-[hsl(var(--orange))]">Energia que gera valor.</span>
+          </h2>
 
-    <p className="lead mt-6 text-offwhite/75 max-w-2xl mx-auto">
-      Descubra se seu sistema solar está gerando como deveria e receba uma orientação clara sobre manutenção, limpeza ou reparo.
-    </p>
+          <p className="lead mt-6 text-offwhite/75 max-w-2xl mx-auto">
+            Descubra se seu sistema solar está gerando como deveria e receba uma orientação clara
+            sobre manutenção, limpeza ou reparo.
+          </p>
 
-    <a
-      href={WHATSAPP_URL}
-      target="_blank"
-      rel="noreferrer"
-      className="mt-10 inline-flex items-center justify-center gap-3 bg-primary px-8 py-4 text-sm font-medium text-primary-foreground hover:bg-[hsl(28_90%_48%)] transition-colors group"
-    >
-      <MessageCircle size={18} strokeWidth={1.6} />
-      Falar pelo WhatsApp
-      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-    </a>
-  </div>
-</section>
-
-      {/* FOOTER / CONTATO */}
-     <footer id="contato" className="bg-background border-t border-border py-12">
-  <div className="container-luiz">
-    <div className="grid md:grid-cols-3 gap-10 items-start">
-      <div>
-        <Logo />
-        <p className="text-sm text-graphite/70 leading-relaxed mt-4 max-w-sm">
-          Manutenção, diagnóstico e reparos para sistemas solares em Salvador e Região Metropolitana.
-        </p>
-      </div>
-
-      <div>
-        <h3 className="font-display text-lg font-semibold text-graphite mb-4">
-          Atendimento
-        </h3>
-        <div className="space-y-3 text-sm text-graphite/70">
-          <p>Salvador e Região Metropolitana</p>
-          <p>Manutenção • Diagnóstico • Reparos</p>
-          <p>Análise de fatura • Limpeza técnica • Inspeção de inversores</p>
-        </div>
-      </div>
-
-      <div>
-        <h3 className="font-display text-lg font-semibold text-graphite mb-4">
-          Contato
-        </h3>
-        <div className="space-y-3 text-sm text-graphite/70">
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
+            className="mt-10 inline-flex items-center justify-center gap-3 bg-primary px-8 py-4 text-sm font-medium text-primary-foreground hover:bg-[hsl(28_90%_48%)] transition-colors group"
           >
-            <MessageCircle size={16} strokeWidth={1.6} />
-            {WHATSAPP_DISPLAY}
-          </a>
-
-          <a
-            href={`mailto:${EMAIL}`}
-            className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
-          >
-            <Mail size={16} strokeWidth={1.6} />
-            {EMAIL}
-          </a>
-
-          <a
-            href="https://www.instagram.com/luiz.solar/"
-            className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
-          >
-            <Instagram size={16} strokeWidth={1.6} />
-            {INSTAGRAM}
+            <MessageCircle size={18} strokeWidth={1.6} />
+            Falar pelo WhatsApp
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-graphite/50">
-      <p>© {new Date().getFullYear()} Luiz Solar. Todos os direitos reservados.</p>
-      <p>Energia solar com clareza, segurança e responsabilidade técnica.</p>
-    </div>
-  </div>
-</footer>
+      {/* FOOTER / CONTATO */}
+      <footer id="contato" className="bg-background border-t border-border py-12">
+        <div className="container-luiz">
+          <div className="grid md:grid-cols-3 gap-10 items-start">
+            <div>
+              <Logo />
+              <p className="text-sm text-graphite/70 leading-relaxed mt-4 max-w-sm">
+                Manutenção, diagnóstico e reparos para sistemas solares em Salvador e Região
+                Metropolitana.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-display text-lg font-semibold text-graphite mb-4">Atendimento</h3>
+              <div className="space-y-3 text-sm text-graphite/70">
+                <p>Salvador e Região Metropolitana</p>
+                <p>Manutenção • Diagnóstico • Reparos</p>
+                <p>Análise de fatura • Limpeza técnica • Inspeção de inversores</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-display text-lg font-semibold text-graphite mb-4">Contato</h3>
+              <div className="space-y-3 text-sm text-graphite/70">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
+                >
+                  <MessageCircle size={16} strokeWidth={1.6} />
+                  {WHATSAPP_DISPLAY}
+                </a>
+
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
+                >
+                  <Mail size={16} strokeWidth={1.6} />
+                  {EMAIL}
+                </a>
+
+                <a
+                  href="https://www.instagram.com/luiz.solar/"
+                  className="flex items-center gap-2 hover:text-[hsl(var(--orange))] transition-colors"
+                >
+                  <Instagram size={16} strokeWidth={1.6} />
+                  {INSTAGRAM}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-graphite/50">
+            <p>© {new Date().getFullYear()} Luiz Solar. Todos os direitos reservados.</p>
+            <p>Energia solar com clareza, segurança e responsabilidade técnica.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
