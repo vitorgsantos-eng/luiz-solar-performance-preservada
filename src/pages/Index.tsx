@@ -494,7 +494,7 @@ const Index = () => {
                   <div className="flex items-center gap-3">
                     <span className="h-2 w-2 rounded-full bg-[hsl(var(--orange))]" />
                     <span className="text-[10px] uppercase tracking-[0.2em] text-graphite/60">
-                      Relatório Luiz Solar
+                      Avaliação Luiz Solar
                     </span>
                   </div>
                   <span className="font-mono text-[10px] text-graphite/40">REL · 0042</span>
@@ -644,14 +644,14 @@ const Index = () => {
           <Reveal delay={0.15}>
             <div className="flex items-center gap-3 mb-6">
               <span className="hairline" />
-              <span className="eyebrow">Autoridade Técnica</span>
+              <span className="eyebrow">Cuidado Técnico</span>
             </div>
             <h2 className="section-title">Energia solar precisa de acompanhamento</h2>
             <p className="lead mt-6">
               Um sistema fotovoltaico é um investimento de longo prazo. Para preservar sua
               eficiência, é importante acompanhar a geração, interpretar a fatura, inspecionar
               equipamentos e realizar manutenção preventiva. A Luiz Solar atua para cuidar do
-              sistema com método, responsabilidade e visão técnica.
+              sistema com método, responsabilidade e critério técnico.
             </p>
             <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-border">
               {[
@@ -821,7 +821,7 @@ const Index = () => {
 
           <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-graphite/50">
             <p>© {new Date().getFullYear()} Luiz Solar. Todos os direitos reservados.</p>
-            <p>Energia solar com clareza, segurança e responsabilidade técnica.</p>
+            <p>Energia solar com clareza, segurança e responsabilidade e critério técnico.</p>
           </div>
         </div>
       </footer>
