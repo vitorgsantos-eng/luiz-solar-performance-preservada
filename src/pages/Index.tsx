@@ -88,7 +88,7 @@ const painCards = [
   "Sua geração caiu nos últimos meses?",
   "A fatura da Coelba está difícil de entender?",
   "O inversor apresenta alertas ou falhas?",
-  "Os módulos estão sujos ou sem inspeção há muito tempo?",
+  "Os módulos estão sujos ou há muito tempo sem inspeção?",
 ];
 
 const clarityItems = [
@@ -252,17 +252,17 @@ const Index = () => {
       <section className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
         <div className="container-luiz">
           <Reveal className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="hairline" />
-              <span className="eyebrow">O Problema</span>
-            </div>
-            <h2 className="section-title">
-              Você instalou energia solar para economizar. Mas ela continua <span className="italic text-[hsl(var(--orange))]">performando bem?</span>
-            </h2>
-            <p className="lead mt-6">
-              Muitos sistemas fotovoltaicos perdem desempenho por sujeira, falhas de conexão, inversores com erro, sombreamento, dimensionamento inadequado ou falta de acompanhamento da fatura. A Luiz Solar identifica o problema e propõe soluções com clareza e responsabilidade.
-            </p>
-          </Reveal>
+  <div className="flex items-center gap-3 mb-6">
+    <span className="hairline" />
+    <span className="eyebrow">O Problema</span>
+  </div>
+  <h2 className="section-title">
+    Você instalou energia solar para economizar. Mas ela continua <span className="italic text-[hsl(var(--orange))]">performando bem?</span>
+  </h2>
+  <p className="lead mt-6">
+    Com o tempo, sujeira nos módulos, falhas de conexão, alertas no inversor, sombreamento, desgaste de componentes ou falta de acompanhamento da fatura podem reduzir silenciosamente o resultado do sistema. A Luiz Solar identifica esses sinais e orienta a melhor solução com clareza, responsabilidade e critério técnico.
+  </p>
+</Reveal>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
             {painCards.map((q, i) => (
