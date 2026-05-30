@@ -352,7 +352,7 @@ const Index = () => {
       </section>
 
       {/* PARA QUEM É */}
-      <section className="py-20 md:py-32">
+      <section className="py-16 md:py-24">
         <div className="container-luiz">
           <Reveal className="max-w-2xl mb-16">
             <div className="flex items-center gap-3 mb-6">
@@ -384,7 +384,7 @@ const Index = () => {
       <ResponsibleCareSection />
 
       {/* FAQ */}
-      <section id="faq" className="py-20 md:py-32">
+      <section id="faq" className="py-16 md:py-24">
         <div className="container-luiz grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <Reveal>
