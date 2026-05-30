@@ -33,6 +33,7 @@ import { ProblemSignalsSection } from "@/components/luiz/ProblemSignalsSection";
 import { DiagnosticSection } from "@/components/luiz/DiagnosticSection";
 import { ClaritySection } from "@/components/luiz/ClaritySection";
 import { BenefitsSection } from "@/components/luiz/BenefitsSection";
+import { ResponsibleCareSection } from "@/components/luiz/ResponsibleCareSection";
 import {
   WHATSAPP_URL,
   WHATSAPP_DISPLAY,
@@ -41,7 +42,6 @@ import {
   INSTAGRAM_URL,
 } from "@/components/luiz/constants";
 import heroImg from "@/assets/hero-technician.jpg";
-import reportImg from "@/assets/report-checklist.jpg";
 
 const services = [
   {
@@ -380,57 +380,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PROVA / AUTORIDADE */}
-      <section className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
-        <div className="container-luiz grid lg:grid-cols-2 gap-16 items-center">
-          <Reveal>
-            <div className="relative">
-              <img
-                src={reportImg}
-                alt="Relatório técnico de inspeção fotovoltaica"
-                width={1280}
-                height={960}
-                loading="lazy"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <div className="absolute -bottom-5 -right-5 w-32 h-32 border border-[hsl(var(--orange))] -z-0" />
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.15}>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="hairline" />
-              <span className="eyebrow">Cuidado Técnico</span>
-            </div>
-
-            <h2 className="section-title">Energia solar precisa de acompanhamento</h2>
-
-            <p className="lead mt-6">
-              Um sistema fotovoltaico é um investimento de longo prazo. Para preservar sua
-              eficiência, é importante acompanhar a geração, interpretar a fatura, inspecionar
-              equipamentos e realizar manutenção preventiva. A Luiz Solar atua para cuidar do
-              sistema com método, responsabilidade e critério técnico.
-            </p>
-
-            <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-border">
-              {[
-                { v: "01", l: "Diagnóstico antes da solução" },
-                { v: "02", l: "Orientação clara ao cliente" },
-                { v: "03", l: "Manutenção com critério técnico" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-display text-2xl md:text-3xl font-semibold text-graphite">
-                    {s.v}
-                  </div>
-                  <div className="text-[11px] text-graphite/60 mt-1 uppercase tracking-wider">
-                    {s.l}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <ResponsibleCareSection />
 
       {/* FAQ */}
       <section id="faq" className="py-20 md:py-32">
