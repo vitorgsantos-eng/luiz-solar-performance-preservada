@@ -34,6 +34,7 @@ import { DiagnosticSection } from "@/components/luiz/DiagnosticSection";
 import { ClaritySection } from "@/components/luiz/ClaritySection";
 import { BenefitsSection } from "@/components/luiz/BenefitsSection";
 import { ResponsibleCareSection } from "@/components/luiz/ResponsibleCareSection";
+import { RealWorksSection } from "@/components/luiz/RealWorksSection";
 import { FinalCtaSection } from "@/components/luiz/FinalCtaSection";
 import {
   WHATSAPP_URL,
@@ -382,6 +383,7 @@ const Index = () => {
       </section>
 
       <ResponsibleCareSection />
+      <RealWorksSection />
 
       {/* FAQ */}
       <section id="faq" className="py-16 md:py-24">
