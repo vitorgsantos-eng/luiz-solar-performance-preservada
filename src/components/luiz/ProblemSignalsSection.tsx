@@ -6,7 +6,7 @@ const alertItems = [
   {
     icon: Activity,
     title: "Geração menor nos últimos meses",
-    text: "Pode haver sujeira, sombreamento, falha técnica ou expectativa de geração fora da realidade.",
+    text: "Pode haver sujeira, sombreamento, falha técnica ou expectativa de geração diferente das condições reais do sistema.",
   },
   {
     icon: ReceiptText,
