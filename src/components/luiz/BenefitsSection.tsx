@@ -39,8 +39,8 @@ export const BenefitsSection = () => {
           </div>
           <h2 className="section-title">Por que escolher a Luiz Solar</h2>
           <p className="lead mt-6">
-            Mais do que executar serviços, a página precisa mostrar segurança para quem quer cuidar
-            do sistema solar sem tomar decisões no escuro.
+            A Luiz Solar ajuda você a cuidar do sistema com clareza, segurança e orientação técnica
+            antes de qualquer decisão.
           </p>
         </Reveal>
 
