@@ -42,7 +42,7 @@ import {
   INSTAGRAM,
   INSTAGRAM_URL,
 } from "@/components/luiz/constants";
-import heroImg from "@/assets/hero-technician.jpg";
+import heroImg from "@/assets/real-works/raw/hero-tecnico-limpando-paineis.jpeg";
 
 const services = [
   {
@@ -236,7 +236,7 @@ const Index = () => {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={heroImg}
-                alt="Técnico Luiz Solar inspecionando painéis fotovoltaicos"
+                alt="Técnico da Luiz Solar realizando limpeza técnica em painéis solares"
                 width={1536}
                 height={1024}
                 className="absolute inset-0 h-full w-full object-cover"
