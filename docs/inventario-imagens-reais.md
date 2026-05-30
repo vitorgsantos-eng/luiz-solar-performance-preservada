@@ -45,7 +45,7 @@ src/assets/real-works/
 > Observação: as descrições abaixo foram montadas a partir das imagens analisadas na conversa. Antes da renomeação definitiva, cada arquivo deve ser aberto no GitHub para confirmar visualmente a correspondência exata.
 
 | Arquivo atual | Descrição visual provável | Uso recomendado | Decisão inicial | Nome final sugerido |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `049380D3-68EA-4520-A0BE-08773AD38EE7.jpeg` | Painel com sujeira acumulada em telhado, evidenciando perda de limpeza/captação | Sinais de alerta ou galeria | Usar | `painel-sujo-diagnostico.jpeg` |
 | `19B7E5F3-AE53-4A3C-8952-2B5B03974D14.jpeg` | Foto ampla de painéis em telhado residencial com bairro ao fundo; pode conter pessoa cortada na lateral | Reserva ou galeria após recorte | Reserva | `telhado-residencial-bairro-reserva.jpeg` |
 | `5047F009-96FA-4AE8-B189-60B8AB0B3A4A.jpeg` | Limpeza com escova/haste em painel, área urbana/prédios ao fundo | Galeria / limpeza técnica | Usar | `limpeza-escova-cidade.jpeg` |
