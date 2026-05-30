@@ -33,6 +33,7 @@ import { Navbar } from "@/components/luiz/Navbar";
 import { FloatingWhatsApp } from "@/components/luiz/FloatingWhatsApp";
 import { Reveal } from "@/components/luiz/Reveal";
 import { Logo } from "@/components/luiz/Logo";
+import { TrustBar } from "@/components/luiz/TrustBar";
 import {
   WHATSAPP_URL,
   WHATSAPP_DISPLAY,
@@ -245,7 +246,7 @@ const Index = () => {
                 className="group inline-flex items-center justify-center gap-3 bg-primary px-7 py-4 text-sm font-medium text-primary-foreground hover:bg-[hsl(28_90%_48%)] transition-colors"
               >
                 <MessageCircle size={18} strokeWidth={1.6} />
-                Agendar Diagnóstico pelo WhatsApp
+                Agendar diagnóstico pelo WhatsApp
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
@@ -308,6 +309,8 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* DOR / PROBLEMA */}
       <section className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
@@ -821,7 +824,7 @@ const Index = () => {
 
           <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-graphite/50">
             <p>© {new Date().getFullYear()} Luiz Solar. Todos os direitos reservados.</p>
-            <p>Energia solar com clareza, segurança e responsabilidade e critério técnico.</p>
+            <p>Energia solar com clareza, segurança, responsabilidade e critério técnico.</p>
           </div>
         </div>
       </footer>
