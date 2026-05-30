@@ -34,6 +34,7 @@ import { DiagnosticSection } from "@/components/luiz/DiagnosticSection";
 import { ClaritySection } from "@/components/luiz/ClaritySection";
 import { BenefitsSection } from "@/components/luiz/BenefitsSection";
 import { ResponsibleCareSection } from "@/components/luiz/ResponsibleCareSection";
+import { FinalCtaSection } from "@/components/luiz/FinalCtaSection";
 import {
   WHATSAPP_URL,
   WHATSAPP_DISPLAY,
@@ -443,39 +444,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA FINAL */}
-      <section className="py-20 md:py-32 bg-graphite text-offwhite relative overflow-hidden">
-        <div className="absolute inset-0 solar-grid-bg opacity-10 pointer-events-none" />
-
-        <div className="container-luiz relative text-center max-w-4xl">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="hairline" />
-            <span className="eyebrow text-[hsl(var(--orange))]">Agende seu diagnóstico</span>
-            <span className="hairline" />
-          </div>
-
-          <h2 className="font-display text-3xl md:text-5xl font-semibold leading-tight">
-            Manutenção que gera resultados. <br />
-            <span className="italic text-[hsl(var(--orange))]">Energia que gera valor.</span>
-          </h2>
-
-          <p className="lead mt-6 text-offwhite/75 max-w-2xl mx-auto">
-            Descubra se seu sistema solar está gerando como deveria e receba uma orientação clara
-            sobre manutenção, limpeza ou reparo.
-          </p>
-
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-10 inline-flex items-center justify-center gap-3 bg-primary px-8 py-4 text-sm font-medium text-primary-foreground hover:bg-[hsl(28_90%_48%)] transition-colors group"
-          >
-            <MessageCircle size={18} strokeWidth={1.6} />
-            Falar pelo WhatsApp
-            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </section>
+      <FinalCtaSection />
 
       {/* FOOTER / CONTATO */}
       <footer id="contato" className="bg-background border-t border-border py-12">
