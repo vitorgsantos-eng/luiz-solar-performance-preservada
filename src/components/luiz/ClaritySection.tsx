@@ -89,7 +89,7 @@ export const ClaritySection = () => {
                     </h3>
                   </div>
                 </div>
-                <span className="font-mono text-[10px] text-graphite/40">REL · MÉTODO</span>
+                <span className="font-mono text-[10px] text-graphite/40">REL · TÉCNICO</span>
               </div>
 
               <div className="px-7 pt-6 flex flex-wrap gap-2">
