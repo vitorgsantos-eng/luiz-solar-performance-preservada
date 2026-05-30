@@ -7,10 +7,6 @@ import {
   Sparkles,
   Cpu,
   FileText,
-  Lock,
-  Target,
-  Leaf,
-  Award,
   Sun,
   Mail,
   Instagram,
@@ -36,6 +32,7 @@ import { TrustBar } from "@/components/luiz/TrustBar";
 import { ProblemSignalsSection } from "@/components/luiz/ProblemSignalsSection";
 import { DiagnosticSection } from "@/components/luiz/DiagnosticSection";
 import { ClaritySection } from "@/components/luiz/ClaritySection";
+import { BenefitsSection } from "@/components/luiz/BenefitsSection";
 import {
   WHATSAPP_URL,
   WHATSAPP_DISPLAY,
@@ -76,29 +73,6 @@ const services = [
     icon: FileText,
     title: "Análise de Fatura",
     text: "Leitura da conta de energia para conferir créditos, compensação, consumo e economia real após a instalação solar.",
-  },
-];
-
-const benefits = [
-  {
-    icon: Lock,
-    title: "Segurança",
-    text: "Procedimentos cuidadosos para proteger pessoas, equipamentos e o valor do seu sistema solar.",
-  },
-  {
-    icon: Target,
-    title: "Precisão",
-    text: "Avaliação técnica com foco nos sinais reais de desempenho, falhas, perdas e oportunidades de correção.",
-  },
-  {
-    icon: Leaf,
-    title: "Sustentabilidade",
-    text: "Cuidamos da energia que você produz para que seu sistema continue contribuindo com economia e responsabilidade ambiental.",
-  },
-  {
-    icon: Award,
-    title: "Excelência",
-    text: "Atendimento próximo, organizado e orientado a entregar confiança antes, durante e depois do serviço.",
   },
 ];
 
@@ -287,7 +261,6 @@ const Index = () => {
       </section>
 
       <TrustBar />
-
       <ProblemSignalsSection />
 
       {/* SERVIÇOS */}
@@ -336,35 +309,8 @@ const Index = () => {
       </section>
 
       <DiagnosticSection />
-
       <ClaritySection />
-
-      {/* BENEFÍCIOS */}
-      <section id="beneficios" className="py-20 md:py-32">
-        <div className="container-luiz">
-          <Reveal className="max-w-2xl mb-16">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="hairline" />
-              <span className="eyebrow">Benefícios</span>
-            </div>
-            <h2 className="section-title">Por que escolher a Luiz Solar</h2>
-          </Reveal>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((b, i) => (
-              <Reveal key={b.title} delay={i * 0.08}>
-                <div className="border-t border-[hsl(var(--orange))] pt-8">
-                  <b.icon size={28} strokeWidth={1.3} className="text-[hsl(var(--sage))] mb-6" />
-                  <h3 className="font-display text-xl font-semibold text-graphite mb-3">
-                    {b.title}
-                  </h3>
-                  <p className="text-sm text-graphite/70 leading-relaxed">{b.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BenefitsSection />
 
       {/* COMO FUNCIONA */}
       <section id="como-funciona" className="py-20 md:py-32 bg-[hsl(var(--light-grey))]/40">
