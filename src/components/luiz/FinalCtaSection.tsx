@@ -27,7 +27,7 @@ export const FinalCtaSection = () => {
 
           <p className="lead mt-6 text-offwhite/75 max-w-2xl mx-auto">
             Fale com a Luiz Solar e receba uma orientação clara sobre geração, fatura, limpeza,
-            manutenção ou reparo. Sem exagero, sem promessa vazia e sem indicação antes da análise.
+            manutenção ou reparo. Sem exagero e sem indicação antes da análise.
           </p>
         </div>
 
