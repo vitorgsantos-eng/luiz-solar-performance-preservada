@@ -30,7 +30,7 @@ const benefits = [
 
 export const BenefitsSection = () => {
   return (
-    <section id="beneficios" className="py-20 md:py-32">
+    <section id="beneficios" className="py-16 md:py-24">
       <div className="container-luiz">
         <Reveal className="max-w-3xl mb-16">
           <div className="flex items-center gap-3 mb-6">
