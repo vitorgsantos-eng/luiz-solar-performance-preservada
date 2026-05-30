@@ -7,7 +7,7 @@ import { Navbar } from "@/components/luiz/Navbar";
 describe("Navbar Component", () => {
   it("renders the header and the brand logo image", () => {
     render(<Navbar />);
-    
+
     // Check if the logo image is rendered by searching for its alt text
     const logoElement = screen.getByAltText(/Luiz Solar/i);
     expect(logoElement).toBeInTheDocument();
@@ -22,10 +22,10 @@ describe("Navbar Component", () => {
       "Diagnóstico",
       "Como funciona",
       "Dúvidas",
-      "Contato"
+      "Contato",
     ];
 
-    expectedLinks.forEach(linkLabel => {
+    expectedLinks.forEach((linkLabel) => {
       // Find navigation links (desktop version)
       const linkElements = screen.getAllByText(linkLabel);
       expect(linkElements.length).toBeGreaterThan(0);
@@ -40,7 +40,7 @@ describe("Navbar Component", () => {
     const ctaLinks = screen.getAllByRole("link", { name: /Agendar Diagnóstico/i });
     expect(ctaLinks.length).toBeGreaterThan(0);
 
-    ctaLinks.forEach(link => {
+    ctaLinks.forEach((link) => {
       expect(link).toHaveAttribute("target", "_blank");
       expect(link).toHaveAttribute("rel", "noreferrer");
       expect(link).toHaveAttribute("href");
